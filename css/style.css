@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
+
+body {
+	font-family: 'Raleway', sans-serif;
+}
+button:active {
+	transform: translate(1px, 1px);
+}
+
+.todo-form {
+	margin: 0 auto;
+	width: 50%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+}
+.todo-form label {
+	font-weight: bold;
+}
+.todo-form input {
+	font-family: inherit;
+	border: none;
+	border-radius: 0.75rem;
+	padding: 5px;
+	height: 1.5rem;
+}
+.todo-form button {
+	font-family: inherit;
+	outline: none;
+	font-weight: bold;
+	border: none;
+	background-color: #82FFEA;
+	border-radius: 0.5rem;
+	height: 1.75rem;
+}
+.todo-form button:hover {
+	background-color: #79E876;
+}
+.todo-tasks {
+	margin: 0 auto;
+	width: 50%;
+}
+.todo-tasks h3 {
+	text-align: center
+}
+.todo-tasks ul {
+	margin: 0;
+	padding-left: 0;
+	list-style: none;
+}
+.todo-tasks .tabs button {
+	box-sizing: border-box;
+	padding: 0;
+	width: 33.33%;
+	outline: none;
+}
+.todo-tasks .tabs button.active-tab {
+	border-radius: 1rem 1rem 0 0;
+	background-color: #ccc;
+}
+.todo-tasks button {
+	border: none;
+}
+.todo-tasks #tasks-container {
+	padding: 10px;
+	border-radius: 0 0 0.5rem 0.5rem;
+	background-color: #ccc;
+}
+.todo-tasks #tasks-container.right-tab-inactive {
+	border-top-right-radius: 0.5rem;
+}
+.todo-tasks #tasks-container.left-tab-inactive {
+	border-top-left-radius: 0.5rem;
+}
+.todo-tasks #tasks-container button {
+	font-family: inherit;
+	outline: none;
+	font-weight: bold;
+	border: none;
+	background-color: #FF8612;
+	border-radius: 0.5rem;
+	height: 1.75rem;
+}
+.todo-tasks #tasks-container button:hover {
+	background-color: #E81C10;	
+}
+.todo-tasks #tasks-container ul {
+	position: relative;
+}
+.todo-tasks #tasks-container ul li {
+	margin: 0.5rem 0;
+}
+.todo-tasks #tasks-container ul li button {
+	position: absolute;
+	right: 0;
+}
